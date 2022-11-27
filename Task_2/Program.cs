@@ -6,8 +6,9 @@
 
 using static System.Console;
 
-WriteLine("Введите число: ");
-string number = ReadLine();
+WriteLine("Введите целое число: ");
+double x = Convert.ToDouble(ReadLine()); // Конвертирую в целое число для избавления от ошибок ввода ;например, пробел перед числом)
+string number = x.ToString(); // Конвертирую обратно в строку для обращения к элементу строки
 
 if (number.Length > 2)
 {
